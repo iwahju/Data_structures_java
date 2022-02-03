@@ -1,0 +1,16 @@
+1. What is the advantage of using Generics?
+It is type safety, there is no need to write code to test for the
+correct data type because it is enforced at compile time.
+We also can write less code and it also have better performance.
+
+2.How do you make the class you define comparable?
+To be able to make an object comparable, the class must implement
+the comparable interface.
+
+3.What is the advantage of overriding member methods in the Object class?
+The advantage of method overriding is that the class can have its own implementation to a
+inherited methods without modifying the parent class code.
+Which means a subclass can implement a parent class method.
+
+4.What kind of methods should be defined as static?
+When you need a method, which you want to call directly by class name, we should make that method static.
