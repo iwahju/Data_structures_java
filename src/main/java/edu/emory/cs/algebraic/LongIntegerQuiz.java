@@ -18,7 +18,7 @@ public class LongIntegerQuiz extends LongInteger {
         int m = Math.max(digits.length, n.digits.length);
         byte[] result = new byte[m];
 
-        if (this.compareAbs(n) >= 0) {
+        if (compareAbs(n) >= 0) {
             System.arraycopy(digits, 0, result, 0, digits.length);
             for (int i = 0; i < n.digits.length; i++) {
                 result[i] -= n.digits[i];
