@@ -1,4 +1,3 @@
-
 package edu.emory.cs.sort;
 
 import java.util.Comparator;
