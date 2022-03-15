@@ -36,7 +36,7 @@ public class HybridSortTest {
     @Test
     public void testRobustness() {
         HybridSort<Integer> gold = new HybridSortBaseline<>();
-        HybridSort<Integer> mine = new HybridSortHW<>();  // TODO: replace with your class
+        HybridSort<Integer> mine = new HybridSortHW<>();
 
         Integer[][] input = {{0, 1, 2, 3}, {7, 6, 5, 4}, {0, 3, 1, 2}, {4, 7, 6, 5}, {9, 8, 11, 10}};
         testRobustness(input, gold, mine);
@@ -57,7 +57,7 @@ public class HybridSortTest {
     @SuppressWarnings("unchecked")
     public void testSpeed() {
         HybridSort<Integer> gold = new HybridSortBaseline<>();
-        HybridSort<Integer> mine = new HybridSortHW<>();  // TODO: replace with your class
+        HybridSort<Integer> mine = new HybridSortHW<>();
         double ratio = 0.25;
         int row = 100, col;
 
