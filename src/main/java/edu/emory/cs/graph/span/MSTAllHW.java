@@ -134,22 +134,25 @@ public class MSTAllHW implements MSTAll {
 
 
 
-//    public static void main(String[] args) {
-//        Graph graph = new Graph(5);
-//
-//        graph.setUndirectedEdge(0, 4, 1);
-//        graph.setUndirectedEdge(0, 3, 1);
-//        graph.setUndirectedEdge(1, 2, 1);
-//        graph.setUndirectedEdge(1, 3, 1);
-//        graph.setUndirectedEdge(2, 4, 1);
-//
-//        MSTAll mst = new MSTAllHW();
-//        List<SpanningTree> sp = mst.getMinimumSpanningTrees(graph);
-//        System.out.println("Trees: " + sp.size());
-//        int i = 1;
-//        for (SpanningTree tree : sp) {
-//            System.out.println("Tree: " + i++);
-//            System.out.println(tree);
-//        }
-//    }
+    public static void main(String[] args) {
+
+        Graph graph = new Graph(5);
+        System.out.println("******This is the extra credit graph!~******");
+
+
+        graph.setUndirectedEdge(0, 4, 1);
+        graph.setUndirectedEdge(0, 3, 1);
+        graph.setUndirectedEdge(1, 2, 1);
+        graph.setUndirectedEdge(1, 3, 1);
+        graph.setUndirectedEdge(2, 4, 1);
+
+        MSTAll mst = new MSTAllHW();
+        List<SpanningTree> sp = mst.getMinimumSpanningTrees(graph);
+        System.out.println("Trees: " + sp.size());
+        int i = 1;
+        for (SpanningTree tree : sp) {
+            System.out.println("Tree: " + i++);
+            System.out.println(tree);
+        }
+    }
 }
